@@ -1,4 +1,4 @@
-# GuardedMC  [Site] (daboltgod.github.io/guardedmc)
+# GuardedMC  [Site](daboltgod.github.io/guardedmc)
 > The Offical GitHUb site for **GuardedMC**
 
 ### We are a Minecraft Bedrock edition server that does prisons and skyblock.
