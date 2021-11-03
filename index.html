@@ -74,6 +74,25 @@ div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,ol,ul,li,figcaption{font: inherit;}sec
                 </div>
                 <div class="mbr-section-btn align-center"><a class="btn btn-md btn-primary display-4" href="https://discord.gg/3xXkFKgg57" target="_blank">Join Our Discord</a> 
                     <a class="btn btn-md btn-warning display-4" href="#">Button N/A</a></div>
+              
+             <div class="server-status">
+    My awesome server is currently <span class="server-online"></span>!
+</div>
+
+<script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+<script>
+    MinecraftAPI.getServerStatus('m41452.mcpe.be', {
+        port: 41452 // optional, only if you need a custom port
+    }, function (err, status) {
+        if (err) {
+            return document.querySelector('.server-status').innerHTML = 'Error loading status';
+        }
+
+        // you can change these to your own message!
+        document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
+    });
+</script>
+              
                 <amp-img src="updates-catspandas_latest.jpg" alt="Minecraft panda" width="320.40000000000003" height="178" layout="responsive">
                     
                 </amp-img>
